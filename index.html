@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Dropdown</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+	.heading{
+    text-align: center;
+    background-color: red;
+	}
+    .sub_main_container {
+        border: 2px solid;
+        width: 327px;
+        height: 384px;
+    }
+
+    .sub_container {
+        display: flex;
+        gap: 50px;
+    }
+
+    .sub_container a {
+        text-decoration: none;
+        display: inline-block;
+        font-size: 20px;
+
+    }
+
+    .icon {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        gap: 14px;
+    }
+
+    .sub_main_container .sub_container {
+        padding: 15px;
+    }
+
+    .sub_main_container .icon_container li {
+        border-top: 1px solid;
+        padding: 15px;
+    }
+
+    .sub_main_container .icon_container span {
+        color: blue;
+    }
+
+    .sub_main_container .icon_container li a {
+        text-decoration: none;
+        color: black;
+        font-weight: 700;
+    }
+
+    .sub_main_container {
+        display: none;
+        position: relative;
+    }
+	.main_container {
+	 display:inline-block;
+	}
+    .main_container:hover .sub_main_container {
+        display: block;
+        position: absolute;
+    }
+
+    .main_container button {
+        padding: 10px;
+        font-weight: 700;
+        margin: 10px;
+    }
+</style>
+
+<body>
+	
+	<h1 class="heading" > Drop Down </h1>
+    <section class="main_container">
+        <button class="ok"> Menu Option</button>
+        <!-- HIDE -->
+        <div class="sub_main_container">
+            <div class="sub_container">
+                <h1> New customers?</h1>
+                <a href="#">Sign Up</a>
+            </div>
+            <div class="icon_container">
+                <ul>
+                    <li class="icon"><span class="material-symbols-outlined">contact_page</span><a href="#">My Profile</a> </li>
+                    <li class="icon"><span class="material-symbols-outlined">library_add</span><a href="#"> Flipkard Plus Zone</a></li>
+                    <li class="icon"><span class="material-symbols-outlined">check_box</span><a href="#"> Orders</a> </li>
+                    <li class="icon"><span class="material-symbols-outlined">favorite</span><a href="#"> Wishlist</a></li>
+                    <li class="icon"><span class="material-symbols-outlined">terminal</span><a href="#">Rewards</a></li>
+                    <li class="icon"><span class="material-symbols-outlined">shopping_cart_checkout</span><a href="#">Gift Cards</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+</body>
+
+</html>
